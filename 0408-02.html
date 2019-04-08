@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>텍스트 스타일</title>
+        <style>
+            span{
+                color: darkgreen;
+                font-weight: 600;
+                font-size: xx-large;
+            }
+            ul{
+                list-style-type: none;
+                margin-bottom: 30px;
+            }
+            li{
+                line-height: 1.5;
+            }
+            /* body의 background색상은 상속되지 않는다. */
+            body{
+                background-color: beige;
+            }
+            div{
+                background-image: url('http://topclass.chosun.com/news_img/1807/1807_008.jpg');
+                background-repeat: no-repeat;
+                background-position: center; 
+                background-size: 100px 100px; 
+                background-attachment: scroll;
+                }
+                /* background size의 기준은 div의 면적기준 */
+                /* contain은 이미지 전체가 들어가도록 이미지 사이즈가 조절되는 것 - 그래서 빈 공간이 생길수 있음.
+                cover는 이미지의 비율을 유지하면서 div 안에 꽉 채워지도록 하는 것 - 그래서 이미지가 다 안들어감.
+                100% 100%는 div 안에 꽉 채워지도록 비율 무시하고 늘려서 넣는 것. 빈 공간도 없고 안보이는 이미지도 없지만 이미지 자체가 왜곡됨. */
+            
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>최신 웹 디자인 트렌드</h1>
+            <br>
+            <ul>
+                <li>
+                    <!-- span, b, text 태그 사용할 수 있다. -->
+                    <span>반응형 웹 디자인</span>-다양한 화면 크기에 최적화 하다
+                    </li>
+                <li>
+                    <span>플랫 디자인</span>- 입체에서 평면으로
+                </li>
+                <li>
+                    <span>풀 스크린 배경</span>- 콘텐츠에 집중
+                </li>
+                <li>
+                    <span>원 페이지 사이트</span>- 한 페이지에 모든 내용을 담다.
+                </li>
+                <li>
+                    <span>패럴랙스 스크롤링</span> - 동적인 효과로 강한 인상을!
+                </li>
+                <li>
+                    <span>웹 폰트</span> - 웹 파이토그래피를 받쳐주는 기술
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
