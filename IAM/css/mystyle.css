@@ -9,12 +9,15 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     font-size:100%;
     background:transparent;
 }
-body{   
+body{
+    
     font-family: 'Karla','Montserrat';
 }
-#menu1024{
+
+#myDropdown{
     display: none;
 }
+/* 배경 */
 #background{
     position: relative;
     z-index: -10;
@@ -107,12 +110,11 @@ body{
     padding: 0;
     position: absolute;
     right: -20px;
-    top: 2200px;
+    top: 2400px;
 }
-
+/* 내용 */
 #contain{
-    width: 320px;  
-    height: 2350px;   
+    width: 100%; 
     margin: 0;         
     position: relative;  
     overflow-x: hidden; 
@@ -125,6 +127,7 @@ nav>img:nth-of-type(1){
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
 nav>img:nth-of-type(2){
     width: 30px;
     float: right;
@@ -132,6 +135,7 @@ nav>img:nth-of-type(2){
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
 #title{
     clear: both;  
     margin-left: 60px;
@@ -182,12 +186,15 @@ nav>img:nth-of-type(2){
     width: 100%;
     display: flex;
     flex-flow: column;
-    margin-left: 110px;
+    /* align-items로 column 정렬 */
+    align-items: center;
+    justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
-
 }
 #skills img{
+    display: flex;
+    justify-content: center; 
     width: 100px;
     height: 100px;
 }
@@ -222,6 +229,7 @@ nav>img:nth-of-type(2){
     margin-left: 35px;
     display: flex;
     flex-flow: column;
+    align-items: center;
     justify-content: center;
 }
 #gallery img{
@@ -232,9 +240,11 @@ nav>img:nth-of-type(2){
     border: 1px solid #ccc;
     box-shadow: 2px 2px 5px rgb(122, 121, 121);
 }
+#gallery img:last-child{
+    visibility: hidden;
+}
 #contact{
-    width: 100%;
-    height: 100px;    
+    width: 100%;   
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
@@ -331,31 +341,31 @@ nav>img:nth-of-type(2){
         margin-top: 30px;
         margin-bottom: 30px;
         display: flex; 
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         justify-content: center;
     }
     #gallery{
-        margin: 0px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;        
-}
-#gallery img{
-    margin: 30px;
-}
-#gallery img:last-child{
-    margin-right: 430px; 
-}
-#contact p{
-    position: absolute;
-    right: 250px;
-}
-#contact a img{
-    width: 52.5px;
-}
-}
+        display: flex; 
+        flex-flow: wrap;
+        align-items: flex-start;
+        justify-content: space-around;         
+    }
+    #gallery img{
+        
+        align-items: flex-start;
+        margin: 10px;
+    }
+    #gallery img:last-child{
+        visibility: hidden;
+    }
+    #contact p{
+        position: absolute;
+        right: 250px;
+    }
+    #contact a img{
+        width: 52.5px;
+    }
+    }
 @media screen and (min-width:1024px)
 {
     #contain{
@@ -365,7 +375,7 @@ nav>img:nth-of-type(2){
     header{
         height: 500px;
     }
-    #menu1024{
+    #myDropdown{
         float: right;
         display: block;
         margin-top: 10px;
@@ -374,11 +384,11 @@ nav>img:nth-of-type(2){
         width: 500px;
         z-index: 5;    
     }
-    #menu1024 p{
+    #myDropdown p{
         display: inline-block;
         padding: 10px;
     }
-    #menu1024 p:nth-of-type(4){
+    #myDropdown p:nth-of-type(4){
         background-color: white;
         margin: 0;
         border-radius: 50px;
@@ -472,18 +482,14 @@ nav>img:nth-of-type(2){
     }
     #gallery{
         display: flex; 
-        flex-flow: row;
-        justify-content: center;  
-        margin-top: 30px;      
-    }
-    #gallery div{
-        width:300px;
-    }
-    #gallery div img{
-        margin: 20px;
+        flex-flow: row wrap;
+        justify-content: center; 
+        align-items: center;
+        margin-top: 30px;  
+        margin-left: 0;    
     }
     footer{
-        height: 200px;
+        height: 250px;
     }
     #contact{
         position: absolute;
