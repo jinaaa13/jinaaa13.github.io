@@ -1,0 +1,139 @@
+body{
+    margin: 0 auto;
+}
+#wrapper{
+    width: 360px;
+    height: 640px;
+    background-color: #353d5a;
+    overflow: hidden;
+}
+/* header 영역 */
+#logo>img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#my{
+    color: #fcc800;
+    text-align-last: center;
+}
+
+/* 나의 리뷰 영역 */
+#Mreveiw{
+    width: 100%;
+    height: 200px;
+    
+}
+
+.review1, .review2, .review3{
+    float: left;
+    position: relative;
+    
+}
+
+.review1{
+    width: 100px;
+    height: 135px;
+    background-image: url('../img/london.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 8px;  
+}
+.review1 h4{
+    margin: 0;
+    color: white;
+    position: absolute;
+    top: 55px;
+    left: 15px;
+}
+.review1 p{
+    position: absolute;
+    left: 20px;
+    top: 70px;
+    margin: 0;
+    color: white;
+
+}
+.review2{
+    width: 120px;
+    height: 150px;
+    border-radius: 8px;  
+    background-color: rgba(228,230,235,0.6);
+    margin-right: 20px;
+    margin-left: 20px;
+    
+}
+.review2 h5{
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 110px;
+    left: 5px;
+}
+.review3{
+    width: 100px;
+    height: 135px;
+    background-image: url('../img/hanoi.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 8px;
+}
+.review3 h4{
+    margin: 0;
+    color: white;
+    position: absolute;
+    top: 55px;
+    left: 25px;
+}
+.review3 p{
+    position: absolute;
+    left: 30px;
+    top: 70px;
+    margin: 0;
+    color: white;
+}
+
+/* 추천글 영역 */
+#best>h3{
+    color: white;
+    text-align-last: center;
+}
+.bestImg1{
+    width: 312px;
+    height: 204px;
+    background-image: url('../img/chiangmai.png');
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+#share{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}  
+.dot{
+    top: 100px;
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 2px;
+}
+.bestImg2{
+    width: 312px;
+    height: 204px;
+    background-image: url('../img/hawaii.jpg');
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
