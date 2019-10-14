@@ -13,7 +13,7 @@
     <script>
         //http reauest 하기 위한 새로운 객체 생성
         var req = new XMLHttpRequest();
-        console.log(this.readyState, this.State);
+        console.log(this.readyState, this.Status);
         if(this.readyState == 4){
             console.log(this.response);
             var data = JSON.parse(this.response);
