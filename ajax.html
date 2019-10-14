@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+        //http reauest 하기 위한 새로운 객체 생성
+        var req = new XMLHttpRequest();
+        req.open("GET","ajax.txt");
+        //http에 요청을 전송
+        req.send();
+    </script>
+
+open -a "/Applications/GoogleChrome.app" -args - --disable-web-security --user-data-dir=/tmp
