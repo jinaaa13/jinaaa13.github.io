@@ -5,18 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Wings</title>
-        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- <link rel="stylesheet" type="text/css" media="screen and (min-width: 361px)" href="css/style361.css"> -->
+        <link rel="stylesheet" href="css/style_per.css" type="text/css">
+        <!-- <link rel="stylesheet" href="css/style.css" type="text/css"> -->
         
     </head>
     <body>
+        <div id="circle"></div>
         <div id="wrapper">
+            <!-- Slide bg 영역 -->
+            <div id="bg">
+                <div id="b1"></div>
+            </div>
             <header>
                 <nav id="logo">
                     <img src="img/logo.jpg" alt="logo" width="60" height="20">
                 </nav>
                 <div>
                    <div id="hamburger">
-
+                        <img src="img/menu.png" alt="">
                    </div>
                    <div id="my">
                        <h3>My Journey</h3>
@@ -41,10 +49,11 @@
                     </div>
                 </div>
                 <div id="best">
+                    <img src="img/search.png" alt="search" width="50" height="50" id="search">
                     <h3>Best Journey</h3>
                     <div class="bestImg1">
                          <!-- title 과 share icon 들어감 -->
-                        <div id="share">
+                        <div class="share1">
                             <div class="dot"></div>
                             <div class="dot"></div>
                             <div class="dot"></div>
@@ -55,10 +64,15 @@
                         </div>
                     </div>
                     <div class="bestImg2">
-                        
+                        <!-- share icon 들어감 -->
+                        <div class="share2">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
                     </div>
                 </div>
-                <img src="img/search.png" alt="search" width="50" height="50">
+                
             </section>
 
         </div>
