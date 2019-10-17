@@ -1,0 +1,280 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+    width: 360px;
+    height: 640px;
+    margin: 0 auto;
+    font-family: 'Roboto','arial';
+    margin: 0;
+    padding: 0;
+
+   /*  position: relative; */
+    
+}
+#wrapper{
+    width: 360px;
+    height: 640px;
+    background-color: #353d5a;
+    overflow: hidden;
+
+}
+/* Slide bg 영역 */
+
+/* #bg{
+    position: relative;
+    
+    
+}
+#bg>div{
+    border-radius: 50%;
+    background-color:#367ec3;
+    width: 600px;
+    height: 600px;
+    z-index: 100;
+} */
+
+/* header 영역 */
+#logo>img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#my{
+    /* display: inline-block; */
+    color: #fcc800;
+    text-align-last: center;  
+    margin: 0; 
+}
+
+#hamburger{
+    width: 40px;
+    height: 30px;
+    margin: 0;
+}
+#hamburger>img{
+    width: 20px;
+    margin-left: 20px;
+}
+
+
+/* 나의 리뷰 영역 */
+#qr{
+    display: none;
+}
+#mobile{
+    display: none;
+}
+#background{
+    width: 360px;
+    height: 475px;
+    top: 165px;
+    position: fixed;
+    overflow: hidden;
+    
+}
+#circle{
+    border-radius: 50%;
+    background-color: #79819b;
+    width: 600px;
+    height: 600px;
+    position: relative;  
+    left: -130px; 
+}
+#Mreveiw{
+    width: 100%;
+    height: 200px;
+    
+}
+
+.review1, .review2, .review3{
+    float: left;
+    position: relative;
+    text-shadow: 3px 3px 3px #222;
+    
+}
+
+.review1{
+    width: 100px;
+    height: 135px;
+    background-image: url('../img/london.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 8px;  
+    box-shadow: 2px 2px 2px #222;
+}
+.review1 h4{
+    margin: 0;
+    color: white;
+    position: absolute;
+    top: 55px;
+    left: 15px;
+    
+}
+.review1 p{
+    position: absolute;
+    left: 20px;
+    top: 70px;
+    margin: 0;
+    color: white;
+
+}
+.review2{
+    width: 120px;
+    height: 150px;
+    border-radius: 8px;  
+    background-color: rgba(228,230,235,0.3);
+    margin-right: 20px;
+    margin-left: 20px;
+    box-shadow: 3px 3px 3px #222;
+    
+}
+.review2 h5{
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 110px;
+    left: 5px;
+}
+.review3{
+    width: 100px;
+    height: 135px;
+    background-image: url('../img/hanoi.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px #222;
+}
+.review3 h4{
+    margin: 0;
+    color: white;
+    position: absolute;
+    top: 55px;
+    left: 25px;
+}
+.review3 p{
+    position: absolute;
+    left: 30px;
+    top: 70px;
+    margin: 0;
+    color: white;
+}
+
+/* 추천글 영역 */
+#best{
+    position: relative;
+}
+#best>img{
+    position: absolute;
+    top: 250px;
+    left: 300px;
+    z-index: 10;
+
+}
+#best>h3{
+    color: white;
+    text-align-last: center;
+    text-shadow: 3px 3px 3px #222;
+}
+.bestImg1{
+    width: 312px;
+    height: 204px;
+    background-image: url('../img/chiangmai.png');
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-shadow: 2px 2px 2px #222;
+    
+}
+.share1{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}  
+.dot{
+    top: 100px;
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 2px;
+}
+#title{
+    position: absolute;
+    top: 70px;
+    right: 80px;
+    text-shadow: 3px 3px 3px #222;
+}
+#title p:nth-of-type(1){
+    color: #fcc800;
+    font-weight: bolder;
+    text-align-last: center;
+    font-size: 1.6em;
+    margin: 0;
+}
+#title p:nth-of-type(2){
+    color: white;
+    text-align-last: center;
+    margin: 0;
+}
+.bestImg2{
+    width: 312px;
+    height: 204px;
+    background-image: url('../img/hawaii.jpg');
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-shadow: 2px 2px 2px #222;
+}
+.share2{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+
+/* Start here for media */
+@media screen and (min-width:361px) and (max-width:700px){
+    
+    #wrapper{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 701px){
+    body{
+        width: 100%;
+        height: 100%;
+        background: rgb(237,198,37);
+        background: linear-gradient(297deg, rgba(237,198,37,1) 15%, rgba(87,190,127,1) 85%);
+    }
+    #mobile{   
+        display: block;
+        position: relative;
+        z-index: 100;
+        margin-top: 20px;
+    }
+    #wrapper{
+        position: absolute;
+        top: 35px;
+        left: 95.5px;
+    }
+    #qr{
+        display: block;
+        position: absolute;
+        top: 200px;
+        left: 600px;
+    }
+    
+}
