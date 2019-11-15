@@ -11,9 +11,9 @@ function fade_change(){
     });
 }
 
-var timer = setInterval("fade_change()", 3000)
+var timer = setInterval("fade_change()", 2000)
 $("div.fade_container").hover(function(){       
     clearInterval(timer);
 }, function(){                                  
-    timer = setInterval("fade_change()",3000);
+    timer = setInterval("fade_change()",2000);
 });
