@@ -1,0 +1,372 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  min-width: 425px;
+  -webkit-text-size-adjust: 100%;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f9e9e2;
+}
+
+header {
+  width: 100%;
+  height: 5.2vh;
+  position: fixed;
+  background-color: #f9e9e2;
+}
+
+header #home {
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+header #home p {
+  font-size: 1.0625rem;
+  font-weight: bolder;
+}
+
+header #home p a {
+  color: #000000;
+}
+
+/* click menu */
+#vmenu ul {
+  z-index: 1000;
+  position: fixed;
+  right: -100px;
+  top: 400px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg) translate(20px, 0);
+}
+
+#vmenu ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 4.25rem;
+  color: #f9e9e2;
+  font-size: 0.6875rem;
+}
+
+#vmenu ul li a {
+  color: #f9e9e2;
+}
+
+#vmenuDot ul {
+  z-index: 3000;
+  position: fixed;
+  right: -120px;
+  top: 385px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg) translate(20px, 0);
+}
+
+#vmenuDot ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+#vmenuDot li:nth-of-type(1) {
+  margin-left: 90px;
+}
+
+#vmenuDot li:nth-of-type(2) {
+  margin-left: 100px;
+}
+
+#vmenuDot li:nth-of-type(3) {
+  margin-left: 110px;
+}
+
+#vmenuDot .mdot {
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: #f9e9e2;
+}
+
+#current .tabcontent {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(90deg);
+  position: fixed;
+  top: 50%;
+  right: 0;
+}
+
+#current .tabcontent ul li {
+  list-style: none;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  float: right;
+  font-size: 0.6875rem;
+  margin-left: 2.0rem;
+}
+
+#current .tabcontent ul li a:hover {
+  text-decoration: none;
+  font-weight: 600;
+  color: #f9e9e2;
+}
+
+.tabcontent {
+  display: none;
+}
+
+.dropdown:hover #current {
+  display: block;
+}
+
+#hello {
+  z-index: 1000;
+  position: fixed;
+  right: 80px;
+  bottom: 22px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #8d8583;
+}
+
+#hello p {
+  position: fixed;
+  right: 65px;
+  bottom: 24px;
+  width: 10px;
+  height: 10px;
+  size: 0.6875rem;
+  font-style: italic;
+}
+
+#hello p a {
+  color: #f9e9e2;
+}
+
+#scroll {
+  position: fixed;
+  bottom: 24px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 8px;
+  z-index: 1000;
+}
+
+#scroll .dot {
+  display: block;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: #f9e9e2;
+  margin-bottom: 9px;
+}
+
+/* page1 */
+#page1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* padding-top:21.48vh; */
+}
+
+#page1 #main {
+  position: absolute;
+  left: 34.571%;
+  top: 25%;
+  width: 65.429%;
+  height: 75.18%;
+  z-index: -100;
+  background-color: #16709e;
+}
+
+#title {
+  position: absolute;
+  left: 17.3%;
+  top: 8%;
+  z-index: 1000;
+}
+
+#title #title1 {
+  padding-top: 21.48vh;
+}
+
+#title #title1 span {
+  font-size: 4.5rem;
+  color: #34bf57;
+  font-weight: 900;
+}
+
+#title #title2 span {
+  font-size: 5.5rem;
+  color: #000000;
+  font-weight: 900;
+}
+
+#direction1 {
+  position: absolute;
+  bottom: -18%;
+  left: 52%;
+}
+
+/* page2 */
+#page2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /*  height: 768px; */
+}
+
+#page2 #about {
+  font-family: 'Kakao';
+  position: absolute;
+  top: 25%;
+  width: 78%;
+  height: 75.18%;
+  z-index: -100;
+  background-color: #34bf57;
+}
+
+/* page3 */
+#page3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#page3 #portfolio {
+  position: absolute;
+  left: 2.5%;
+  width: 95.5%;
+  height: 100vh;
+  z-index: -100;
+  background-color: #f03c3c;
+  margin: 0 auto;
+}
+
+
+
+
+#page3 #direction2 {
+  position: absolute;
+  top: 75%;
+  left: -5%;
+  -webkit-transform: rotate(90deg) scaleY(-1);
+          transform: rotate(90deg) scaleY(-1);
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* modal */
+
+
+
+
+/* page4 */
+#page4 {
+  width: 100%;
+  height: 94.9vh;
+}
+
+#page4 #contact {
+  position: relative;
+  left: 2.5%;
+  width: 95%;
+  height: 100%;
+  z-index: -100;
+}
+
+#page4 #contact #direction3 {
+  position: absolute;
+  top: 48%;
+  left: 28%;
+  z-index: 1000;
+}
+
+#page4 #contact #pink {
+  position: relative;
+}
+
+#page4 #contact #pink #talk #span1 span {
+  position: absolute;
+  left: 18%;
+  top: 18%;
+  font-size: 3.1875rem;
+  font-weight: 900;
+  color: #16709e;
+}
+
+#page4 #contact #pink #mail {
+  position: relative;
+  width: 100%;
+  height: 94.9vh;
+}
+
+#page4 #contact #pink #mail #button {
+  position: absolute;
+  top: 46%;
+  left: 18%;
+  width: 16%;
+  height: 10vh;
+  background-color: #16709e;
+}
+
+#page4 #contact #pink #mail #button span {
+  position: absolute;
+  right: -2%;
+  font-size: 1.9375rem;
+  font-weight: 900;
+  color: #f9e9e2;
+}
+
+#page4 #contact #pink #mail #button span:last-child {
+  margin-top: 7%;
+}
+/*# sourceMappingURL=main.css.map */
