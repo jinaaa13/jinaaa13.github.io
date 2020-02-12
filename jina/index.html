@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" crossorigin="anonymous"
-    href="https://meta-kage.kakaocdn.net/dn/osa/blog/assets/fonts/Kakao.css"/>
+    <!-- <link rel="stylesheet" type="text/css" crossorigin="anonymous"
+    href="https://meta-kage.kakaocdn.net/dn/osa/blog/assets/fonts/Kakao.css"/> -->
     <link rel="stylesheet" href="css/main.css">
 <!--     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script> -->
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/scroll.js"></script>
+    <!-- <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scroll.js"></script> -->
     
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
     <title>Jina</title>
 </head>
 <body>
@@ -32,17 +32,17 @@
             </div> -->
         <div id="vmenu">
             <ul>
-                <li><a href="#page2">About.</a></li>
-                <li><a href="#page3" class="dropdown">Portfolio.</a></li>
-                <li><a href="mailto:jinaaa13@gmail.com">Contact.</a></li>
+                <li><a href="#page2" class="colorPink ori">About.</a></li>
+                <li><a href="#page3" class="dropdown colorPink ori">Portfolio.</a></li>
+                <li><a href="mailto:jinaaa13@gmail.com" class="colorPink ori">Contact.</a></li>
             </ul>
         </div>
             <ul id="current" class="tabcontent">
-                <li><a href="#">All.</a></li>
-                <li><a href="#">Print.</a></li>
-                <li><a href="#">Web&App.</a></li>
-                <li><a href="#">UX report.</a></li>
-                <li><a href="#">interior.</a></li>
+                <li><a href="#all" id="caption" class="showAllBtn activeRect">All.</a></li>
+                <li><a href="#print" id="print" class="categoryBtn">Print.</a></li>
+                <li><a href="#web" id="web" class="categoryBtn">Web&App.</a></li>
+                <li><a href="#ux" id="ux" class="categoryBtn">UX report.</a></li>
+                <li><a href="#interior" id="interior" class="categoryBtn">interior.</a></li>
             </ul>
         
         
@@ -84,88 +84,187 @@
             <article id="page2">
                 <div id="about">
                     <div id="green">
-                        <span>Hello,I am Jina.</span>
+                        <div id="greenRight">
+                            <div id="greenTitle1">
+                                <span>나는 <b>사람을 위한일을 </b> 하고 싶습니다.</span>
+                            </div>
+                            <div id="greenTitle2">
+                                <span>이만큼 재미있는 일이 없어 다시 선택한 <b>디자이너</b></span>
+                                <br>
+                                <span>'기술'보단'기획'에 강한 <b>기획자</b></span>                                
+                                <br>
+                                <span>사용자를 우선으로 생각하여 설계하는 <b>설계자</b></span>
+                                <br>
+                                <span>그리고</span>
+                                <br>
+                                <span>커뮤니케이션에 능한 당신의<b>동료</b></span>
+                                <br>
+                                <span>This is <b>me</b></span>
+                            </div>
+                        </div>
+                        <div id="greenLeft">
+                            <span>
+                                이 곳에는 스킬을 씁시다.
+                            </span>
+                        </div>
                     </div>
                 </div>
             </article>
             <!-- page3 -->
-            <article id="page3">
+           <!--  <article id="page3">
                 <div id="portfolio">
                     <div id="gallery">
                         <div class="caption">
-                            <img src="img/print01.jpg" alt="">
-                            <div class="popup"><b>sarabeth's Menu</b>  
-                            </div>            
+                            <li class="gallery_list">
+                                <ul>
+                                    <img src="img/print01.jpg" alt="sarabeth menu">
+                                    <div class="popup"><b>sarabeth's Menu</b></div> 
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </article> -->
+            <article id="page3">
+                <div id="portfolio">
+                    <div id="gallery">
+                        
+                            <div class="caption web">
+                                <img src="img/print01.jpg" alt="sarabeth menu">
+                                <div class="popup"><b>Cafe Find App</b></div>      
+                            </div>
+                            <div class="caption print">
+                                <img src="img/print02.jpg" alt="sarabeth menu">
+                                <div class="popup"><b>OH!PPORON</b></div>      
+                            </div>
+                            <div class="caption ux">
+                                <img src="img/print09.jpeg" alt="Kakao Bus&Subway">                               
+                                </a>
+                                <div class="popup"><b>Kakao Bus&Subway</b></div>      
+                            </div>
+                            <div class="caption print">
+                                <img src="img/print04.jpg" alt="visual identity">
+                                <div class="popup"><b>visual identity</b></div>      
+                            </div>
+                            <div class="caption web">
+                                <img src="img/print05.jpg" alt="Tile cCompany">
+                                <div class="popup"><b>Tile Company</b></div>      
+                            </div>
+                            <div class="caption web">
+                                <img src="img/print06.jpg" alt="Wings">
+                                <div class="popup"><b>Travel App</b></div>      
+                            </div>                    
+                        <div class="caption print">
+                            <img src="img/print07.jpg" alt="Portland leaflet">
+                            <div class="popup"><b>Portland leaflet</b></div>    
+                        </div>
+                        <div class="caption print">
+                            <img src="img/print08.jpg" alt="cosmetics Package">
+                            <div class="popup"><b>cosmetics Package</b></div>    
+                        </div>
+                        <div class="caption web">
+                            <img src="img/print09.jpg" alt="Personal Web site">
+                            <div class="popup"><b>Personal Web site</b></div>    
+                        </div>
+                        <div class="caption ux">
+                            <img src="img/print11.jpg" alt="K-in beauty">
+                            <div class="popup"><b>K-in beauty</b></div>    
+                        </div>
+                        <!-- ㄷㅏ시 설정하기 -->
+                        <div class="caption interior">
+                            <img src="img/print10.jpg" alt="sarabeth menu">
+                            <div class="popup"><b>Store interior</b></div>    
+                        </div>
+                        <div class="caption print">
+                            <img src="img/print12.jpg" alt="doughnut">
+                            <div class="popup"><b>doughnut leaflet</b></div>    
+                        </div>
+                        <div class="caption web">
+                            <img src="img/print10.jpg" alt="Education web site">
+                            <div class="popup"><b>Education web site</b></div>      
+                        </div>
+                        <div class="caption interior">
+                            <img src="img/print02.jpg" alt="sarabeth menu">
+                            <div class="popup"><b>leaflet</b></div>      
                         </div>
                         <div class="caption">
-                            <img src="img/print02.jpg" alt="">
-                            <div class="popup"><b>sarabeth's Menu</b>  
-                            </div>            
+                            <img src="img/print03.jpg" alt="sarabeth menu">
+                            <div class="popup"><b>cosmetics pakage</b></div>      
                         </div>
                         <div class="caption">
-                            <img src="img/print03.jpg" alt="">
-                            <div class="popup"><b>sarabeth's Menu</b>  
-                            </div>            
+                            <img src="img/print04.jpg" alt="sarabeth menu">
+                            <div class="popup"><b>visual identity</b></div>      
                         </div>
                         <div class="caption">
-                            <img src="img/print04.jpg" alt="">
-                            <div class="popup"><b>sarabeth's Menu</b>  
-                            </div>            
+                            <img src="img/print05.jpg" alt="sarabeth menu">
+                            <div class="popup"><b>company</b></div>      
                         </div>
                         <div class="caption">
-                            <img src="img/print04.jpg" alt="">
-                            <div class="popup"><b>sarabeth's Menu</b>  
-                            </div>            
-                        </div>
-                        <div class="caption">
-                            <img src="img/print04.jpg" alt="">
-                            <div class="popup"><b>sarabeth's Menu</b>  
-                            </div>            
-                        </div>
-                        <div class="caption">
-                            <img src="img/print04.jpg" alt="">
-                            <div class="popup"><b>sarabeth's Menu</b>  
-                            </div>            
-                        </div>
-                        <div class="caption">
-                            <img src="img/print04.jpg" alt="">
-                            <div class="popup"><b>sarabeth's Menu</b>  
-                            </div>            
-                        </div>
-                        <div class="caption">
-                            <img src="img/print04.jpg" alt="">
-                            <div class="popup"><b>sarabeth's Menu</b>  
-                            </div>            
-                        </div>
-                        <div class="caption">
-                            <img src="img/print04.jpg" alt="">
-                            <div class="popup"><b>sarabeth's Menu</b>  
-                            </div>            
-                        </div>
-                        <div class="caption">
-                            <img src="img/print04.jpg" alt="">
-                            <div class="popup"><b>sarabeth's Menu</b>  
-                            </div>            
-                        </div>
-                        <div class="caption">
-                            <img src="img/print04.jpg" alt="">
-                            <div class="popup"><b>sarabeth's Menu</b>  
-                            </div>            
-                        </div>
-                        <div class="caption">
-                            <img src="img/print04.jpg" alt="">
-                            <div class="popup"><b>sarabeth's Menu</b>  
-                            </div>            
+                            <img src="img/print06.jpg" alt="sarabeth menu">
+                            <div class="popup"><b>education</b></div>      
                         </div>
                     </div>
                     <!-- modal -->
-                    <div id="modal">
-                        <div id="pop">
+                    <div class="modal">
+                        <div class="pop">
                             <img src="img/sarabeth.jpg" id="img01" alt="">
-                            <img src="img/close.png" width="30px" id="close">
+                            <!-- <img src="img/close.png" width="30px" id="close"> -->
                         </div>
                     </div>
-
+                    <div class="modal">
+                        <div class="pop">
+                            <img src="img/oh!pporon.jpg" id="img01" alt="">
+                            <!-- <img src="img/close.png" width="30px" id="close"> -->
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="pop">
+                            <embed src="img/kakao.pdf" type="application/pdf" width="100%" height="100%"></a>
+                            <!-- <img src="img/close.png" width="30px" id="close"> -->
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="pop">
+                            <img src="img/selfbranding.jpg" id="img01" alt="">
+                            <!-- <img src="img/close.png" width="30px" id="close"> -->
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="pop">
+                            <img src="img/sarabeth.jpg" id="img01" alt="">
+                            <!-- <img src="img/close.png" width="30px" id="close"> -->
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="pop">
+                            <img src="img/wings.png" id="img01" alt="wings" width="100%">
+                            <!-- <img src="img/close.png" width="30px" id="close"> -->
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="pop">
+                            <img src="img/portland.jpg" id="img01" alt="">
+                            <!-- <img src="img/close.png" width="30px" id="close"> -->
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="pop">
+                            <img src="img/package.jpg" id="img01" alt="">
+                            <!-- <img src="img/close.png" width="30px" id="close"> -->
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="pop">
+                            <img src="img/package.jpg" id="img01" alt="">
+                            <!-- <img src="img/close.png" width="30px" id="close"> -->
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="pop">
+                            <embed src="img/Beauty.pdf" type="application/pdf" width="100%" height="100%">
+                            <!-- <img src="img/close.png" width="30px" id="close"> -->
+                        </div>
+                    </div>
                     <!-- direction -->
                     <div id="direction2">
                         <img src="img/direction.png" alt="direction2" width="180">
@@ -198,7 +297,66 @@
         </section>
     </div>
     
-
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
+<script>
+    $(function(){
 
+        var idx = 0;
+        $('.caption').on('click',function(){ // 모든 caption을 가져온다.
+            idx = $(this).index(); // 내가 클릭한 caption을 선택한다.
+            $('.modal').eq(idx).fadeIn(); // modal의 idx를 불러온다.
+            $('.modal').eq(idx).css("display","block");
+            $(window).live('scroll',function(){return false;});          
+        });
+        $('.modal').on('click',function(){
+            console.log("click");
+            $('.modal').eq(idx).fadeOut();
+            $('.modal').eq(idx).css("display","none");
+            $(window).scroll(function(){return false;});
+            
+        });
+    }
+    );
+
+    //category
+var showAllBtn = document.querySelector('.showAllBtn');
+var categoryBtn = document.querySelectorAll('.categoryBtn');
+var workLists = document.querySelectorAll('#gallery > div');
+
+for(var i = 0; i<categoryBtn.length; i++){
+
+    categoryBtn[i].addEventListener('click', function(e){
+        e.preventDefault(); /* a링크를 한번 해제함 */
+        var categoryTarget = e.target.getAttribute("href");
+        var listTarget = categoryTarget.replace('#','');
+    // console.log(listTarget);
+    for( var b=0; b<workLists.length; b++){
+        workLists[b].style.display = 'none'
+    }
+    // document.getElementsByClassName(listTarget).style.display="block";
+    var getTargetList = document.getElementsByClassName(listTarget)
+    for(var u =0; u<getTargetList.length; u++){
+        getTargetList[u].style.display="block";
+    }
+    
+    showAllBtn.classList.remove('activeRect');
+    for( var t=0; t<categoryBtn.length; t++){
+        categoryBtn[t].classList.remove('activeRect');
+        e.target.classList.add('activeRect');
+    }
+    });
+}
+
+showAllBtn.addEventListener('click', function(){
+    showAllBtn.classList.add("activeRect");
+    for(var s = 0; s<workLists.length; s++){
+        workLists[s].style.display = "block";
+    }
+    for(var a=0; a<categoryBtn.length; a++){
+        categoryBtn[a].classList.remove('activeRect');
+    }
+})
+</script>
 </html>
