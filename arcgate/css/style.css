@@ -1,0 +1,395 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Karla|Montserrat&display=swap');
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    background:transparent;
+}
+body{
+    
+    font-family: 'Kakao','Karla','Montserrat';
+}
+#wrapper{
+    width: 1900px;
+    height: 4800px;
+    
+}
+header{
+    height: 105px;
+    /* background-color: bisque; */
+}
+
+#logo{
+    float: left;
+    margin-left: 350px;
+    margin-top: 30px;
+}
+/* a{
+    text-decoration: none;
+    color:#606060;
+    font-weight: bolder;
+} */
+ul li{
+    list-style: none;
+    display: inline-block;
+    float: left;
+    margin: 30px;
+    margin-top: 45px;
+
+}
+ul li a{
+    text-decoration: none;
+    color:#606060;
+    font-weight: bolder;
+}
+ul li:nth-of-type(1){
+    margin-left: 190px;
+}
+
+#search{
+    float: right;
+    margin-right: 350px;
+    margin-top: 35px;
+}
+#topMenu a:hover{
+    color: #6a3b33;
+    font-size: 1.2em;
+}
+#title{
+    width: 100%;
+    height: 1006px;
+    background-image: url(../img/bg01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: darkslategrey; */
+    position: relative;
+    
+}
+.fade_container img:nth-of-type(2){
+    display: none;
+}
+.fade_container img:nth-of-type(3){
+    display: none;
+}
+/* slider */
+.fade_contariner{
+    width: 100%;
+    height: 1006px;
+}
+
+.fade_contariner img{
+    position: absolute;
+}
+.fade_container .active{
+    z-index:1;
+}
+
+#title h1{
+    position: absolute;
+    color: white;
+    font-size: 5.6em;
+    top: 235px;
+    left: 50px;
+    text-shadow: 5px 5px 8px #0f1418c0;
+}
+#down{
+    position: absolute;
+    text-align: center;
+    top: 528px;
+    right: 350px;
+    color: white;
+}
+#down p:nth-of-type(1){
+    font-size: 3.7em;
+    text-shadow: 5px 5px 8px #0f1418c0;
+}
+#down p:nth-of-type(2){
+    font-size: 5.6em;
+    text-shadow: 5px 5px 8px #0f1418c0;
+}
+#down p:nth-of-type(3){
+    font-size: 1.5em;
+    background: #6a3b33;
+    width: 390px;
+    height: 85px;
+    border-radius: 30px;
+    line-height: 85px;
+    box-shadow: 5px 5px 8px #0f1418c0;
+}
+#quick{
+    position: fixed;
+    z-index: 10;
+    width: 80px;
+    height: 480px;
+    background: rgba(247,247,247, 0.7);
+    border-radius: 50px;
+    right: 50px;
+    top: 200px;
+    font-size: 0.9em;
+    box-shadow: 5px 5px 8px #292a2bc0;   
+}
+#icon{
+    align-items: center;
+    margin: 40px 5px;
+}
+#quick img{
+    width: 32px;
+}
+.iconMenu{
+    width: 70px;
+    text-align: center;
+    margin-top: 35px;
+}
+#slideMenu{
+    position: absolute;
+    bottom: 60px;
+    left: 900px;
+}
+#slideMenu>ul>li{
+    bottom: 20px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #6a3b33;
+    margin: 15px;
+    transition: background-color 0.6s ease;
+    z-index: 1000;
+}
+
+#pro{
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    /* background: lightslategray; */
+}
+#art{
+    position: absolute;
+    top: 220px;
+    left: 210px;
+    width: 1690px;
+    height: 650px;
+    background-image: url(../img/pb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+#proArt{
+    position: absolute;
+    left: 150px;
+    top: 100px;
+    overflow: hidden;
+}
+article{
+    width: 394px;
+    height: 450px;
+    background: rgba(255, 255, 255, 0.63);
+    display: inline-block;
+    
+}
+
+#art p{
+    color: white;
+    font-size: 2.0em;
+    text-align: center;
+    line-height: 450px;
+    text-shadow: 2px 2px 3px #222;
+}
+#art h3{
+    position: absolute;
+    top: -80px;
+    left: 150px;
+    font-size: 6.25em;
+}
+#art h5{
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    font-size: 2.5em;
+    transform: rotate(-90deg);
+}
+
+.hover{
+    position: relative;
+    width: 394px;
+    height: 450px;
+    background: rgba(255, 255, 255, 0.63);
+    display: inline-block;
+    overflow: hidden;
+}
+.hover img{
+    transition: all ease 0.8s;
+}
+.hover img:hover{
+    transform:scale(2.0); 
+}
+#art p:hover{
+    transform:scale(1.8); 
+    color: #6a3b33;
+}
+.hover p{
+    position: absolute;
+    top: 0px;
+    left: 150px;
+}
+
+/* 
+#art article:nth-of-type(1){
+    background-image: url(../img/p1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;  
+}
+#art article:nth-of-type(2){
+    background-image: url(../img/p2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+}
+#art article:nth-of-type(3){
+    background-image: url(../img/p3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+*/
+#port{
+    position: relative;
+    width: 100%;
+    height: 1100px;
+}
+#port h3{
+    position: absolute;
+    top: 130px;
+    left: 350px;
+    font-size: 6.25em;
+    z-index: 10;
+}
+#port h5{
+    position: absolute;
+    top: 350px;
+    left: 220px;
+    font-size: 2.5em;
+    transform: rotate(-90deg);
+    z-index: 10;
+}
+#portG{
+    position: absolute;
+    top: 220px;
+    width: 100%;
+    height: 650px;
+    /* 
+    background-image: url(../img/gallery04.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    */
+    overflow: hidden;
+    /* z-index: -10; hover사용시에는 안됨 무조건 hover로 selec 되는 애가 맨 위에 있어야함 그래서 text에 z-index 줬음*/
+}
+#portG img{
+    transition: all ease 0.8s;
+}
+#portG img:hover{
+    transform:scale(1.5); 
+}
+#support{
+    position: relative;
+    width: 100%;
+    height: 1100px;
+}
+#supportBg{
+    position: absolute;
+    top: 220px;
+    right: 210px;
+    width: 100%;
+    height: 650px;
+    background-image: url(../img/building.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+#supportArt{
+    position: absolute;
+    right: 150px;
+    top: 100px;
+}
+#support h3{
+    position: absolute;
+    top: -80px;
+    left: 550px;
+    font-size: 6.25em;
+}
+#support h5{
+    position: absolute;
+    top: 200px;
+    left: 350px;
+    font-size: 2.5em;
+    transform: rotate(-90deg);
+}
+/* .sI{
+    position: absolute;
+    top: 100px;
+} */
+#supportArt img{
+    margin-top: 140px;
+    margin-left: 170px;
+}
+#supportArt p{
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 60px;
+}
+.sh{
+    position: relative;
+    width: 394px;
+    height: 450px;
+    background: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    overflow: hidden;
+}
+.supportH:hover{
+    background: rgba(255,255,255,1);
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 385px;
+    background: #6a3b33;
+}
+#info1 ul li{
+    color: white;
+}
+#info1{
+    position: absolute;
+    left: 160px;
+}
+#info2{
+    position: absolute;
+    color: white;
+    top: 150px;
+    left: 350px;
+}
+#info2 P{
+    margin-top: 8px;
+}
+#logo2{
+    position: absolute;
+    top: 100px;
+    right: 350px;
+}
+#top p{
+    position: absolute;
+    width: 100%;
+    height: 65px;
+    top: 330px;
+    color: white;
+    background: #532f28;
+    font-size: 2.0em;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 65px;
+}
